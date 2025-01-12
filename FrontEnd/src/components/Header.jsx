@@ -18,11 +18,13 @@ function Header() {
             <li>Home</li>
           </NavLink>
           <NavLink
-          
-          
+          style={({ isActive }) => {
+            return isActive ? { color: "#F6214B" } : {};
+          }}
+          to="favorites"
             className={style.td}
           >
-            <li>About</li>
+            <li>Wishlist</li>
           </NavLink>
           <NavLink
             className={style.td}

@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 90vh;
+    background-color: #F6214B;
+    .heroimg{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        img{
+        height: 100%;
+
+        }
+    }
+    .herotext{
+        position: absolute;
+        left: 15%;
+        top: 30%;
+        width: 40%;
+
+        p{
+            color: white;
+            font-size: 17px;
+            margin-bottom: 5%;
+            font-weight: 600;
+        }
+        h1{
+            color: white;
+            font-size: 60px;
+            margin-bottom: 5%;
+            font-weight: 600;
+        }
+       
+        button{
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 13px;
+            width: 180px;
+            font-size: 16px;
+            font-weight: 500;
+            &:hover{
+                border: 1px solid white;
+                color: white;
+                background-color: #F6214B;
+            }
+        }
+    }
+}
+
+.unique{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 40px;
+        margin-bottom: 2%;
+    }
+    p{
+        font-size: 16px;
+        color: gray;
+        margin-bottom: 5%;
+    }
+    .uniquecards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));  
+        justify-content: center;
+        align-items: center;
+        
+        .uniquecard{
+            width: 80%;
+            margin-bottom: 10%;
+            &:hover h2{
+                color: #F6214B;
+            }
+            h2{
+                margin-bottom: 20px;
+                span{
+                    font-size: 18px;
+                    margin-right: 3%;
+                    
+                }
+            }
+        }
+    }
+}
+.blog{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 40px;
+        margin-bottom: 2%;
+    }
+    p{
+        font-size: 16px;
+        color: gray;
+        margin-bottom: 5%;
+    }
+    .blogcards{
+        width: 100%;
+        display: grid;
+        grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+        gap: 30px;
+        .blogcard{
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .blogtext{
+            width: 94%;
+            margin-top: 3%;
+          span{
+            background-color: #F6214B;
+            color: white;
+            padding: 5px 10px;
+            &:hover{
+                background-color:white;
+                border: 1px solid rgb(186, 186, 186);
+                color: black;
+                cursor: pointer;
+            }
+           
+          }
+          h3{
+            margin-top: 5%;
+            font-size: 23px;
+        }
+        p{
+            margin-top: 3%;
+        }
+
+        }
+        }
+    }
+}
+
+.immigrants{
+    position: relative;
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 40px;
+        margin-bottom: 2%;
+    }
+    p{
+        font-size: 16px;
+        color: gray;
+        margin-bottom: 5%;
+    }
+    .cards{
+        display: grid;
+        width: 100%;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        .card{
+            &:hover h3{
+                color: #F6214B;
+            }
+            &:hover button{
+                background-color: #F6214B;
+            }
+            &:hover img{
+                transform: scale(1.2);
+            }
+            
+            .image{
+                overflow: hidden;
+               
+            }
+img{
+    transition: 1s;
+   
+}
+.cardtext{
+    .delete{
+        color: white;
+background-color: #F6214B;
+padding:10px 15px;
+border: none;
+margin-top: 5%;
+margin-right: 25%;
+    }
+    button{
+       
+color: white;
+background-color: black;
+padding:10px 15px;
+border: none;
+margin-top: 5%;
+    }
+    h3{
+        margin-top: 3%;
+    }
+    p{
+        margin-top: 3%;
+    }
+}
+        }
+    }
+}
+.search{
+    margin-bottom: 3%;
+    
+    height: 30px;
+    padding: 10px;
+}
+
