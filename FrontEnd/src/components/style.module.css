@@ -5,13 +5,17 @@
     margin: 0 auto;
     width: 60%;
     padding: 20px;
+    
+    
     ul{
+        
         width: 50%;
         align-items: center;
         justify-content: space-between;
         gap: 30px;
         display: flex;
         text-decoration: none;
+        margin-right: 60px;
         .td{
             color: black;
             text-decoration: none;
