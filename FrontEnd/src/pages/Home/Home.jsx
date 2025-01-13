@@ -42,7 +42,7 @@ function Home(product) {
     product.countryName.toLowerCase().includes(searchQuery.toLowerCase())
   )
   function handleAddFavorite(product){
-    let findFavorite= favorite.find(item=>item.id==product.id)
+    let findFavorite= favorite.find(item=>item._id==product._id)
 
     if(findFavorite){
        alert("Bu mehsul wishlistde movcuddur")

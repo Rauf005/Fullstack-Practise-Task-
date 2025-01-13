@@ -10,7 +10,7 @@ function Favorites() {
   let {favorite,setFavorite}=useContext(favoriteContext)
 
   function handleDeleteFavorite(id){
-      let filteredFavorite=favorite.filter(product=>product.id!==id)
+      let filteredFavorite=favorite.filter(product=>product._id!==id)
       setFavorite(filteredFavorite)
   }
 
@@ -26,7 +26,7 @@ function Favorites() {
                 <div className={style.image}> <img src={product.image} alt="" /></div>
                   <div className={style.cardtext}>
                    <div className={style.aa}>
-                   <button  className={style.btn}>{product.countryName}</button>  <span onClick={()=>handleDeleteFavorite(product.id)}  className={style.heart}> <FaHeartBroken/></span>
+                   <button  className={style.btn}>{product.countryName}</button>  <span onClick={()=>handleDeleteFavorite(product._id)}  className={style.heart}> <FaHeartBroken/></span>
                    </div>
                     <h3>{product.description}</h3>
                     <p>{product.description}.</p>
